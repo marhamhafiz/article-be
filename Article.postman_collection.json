@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "86eb2b6b-f9aa-493a-91c4-6c9f510cae65",
+		"name": "Article",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:10000/api/article?limit=5&offset=0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"article"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Article By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:10000/api/article/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"article",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Coba validasi terus terus\",\r\n    \"content\" : \"Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing Ngoding nih pusing aing\",\r\n    \"category\" : \"Paper\",\r\n    \"status\" : \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:10000/api/article",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Belajar Golang padahal malam minggu\",\r\n    \"content\": \"Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda Apa yang engkau cari anak muda\",\r\n    \"category\": \"News\",\r\n    \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:10000/api/article/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"article",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:10000/api/article/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"article",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
